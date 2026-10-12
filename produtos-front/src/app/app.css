@@ -1,0 +1,169 @@
+
+:host {
+  display: block;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #243247;
+  background-color: #f3f6fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+header {
+  margin-bottom: 32px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  color: #173b74;
+  font-size: 32px;
+}
+
+header p {
+  color: #64748b;
+  font-size: 15px;
+}
+
+.card {
+  margin-bottom: 24px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(20, 40, 80, 0.06);
+}
+
+h2 {
+  margin: 0 0 22px;
+  font-size: 21px;
+  color: #1e3a5f;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 14px;
+  background: #fff;
+}
+
+input:focus {
+  outline: 2px solid #93c5fd;
+  border-color: #2563eb;
+}
+
+button {
+  padding: 11px 17px;
+  margin: 4px 6px 4px 0;
+  color: white;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+form button {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.busca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.busca input {
+  max-width: 320px;
+}
+
+.resultado {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #eff6ff;
+  border-radius: 7px;
+}
+
+.mensagem {
+  margin-bottom: 22px;
+  padding: 15px;
+  background-color: #e0f2fe;
+  color: #075985;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 14px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+th {
+  background-color: #eff6ff;
+  color: #1e3a5f;
+}
+
+td input {
+  min-width: 100px;
+}
+
+td button {
+  padding: 9px 12px;
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 20px 12px;
+  }
+
+  .card {
+    padding: 18px;
+    overflow-x: auto;
+  }
+
+  .busca {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .busca input {
+    max-width: 100%;
+  }
+
+  table {
+    min-width: 550px;
+  }
+}
